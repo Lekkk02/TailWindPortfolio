@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Mi portafolio</title>
+  </head>
+  <body>
+    <nav id="Navbar" class="relative p-2 bg-veryLightGray">
+      <div class="flex flex-row items-center justify-center md:justify-between">
+        <div>
+          <a
+            class="text-left font-bold text-xl ml-6 italic md:inline cursor-pointer"
+            >mike<span class="text-blue-400">.</span>jrDev</a
+          >
+        </div>
+        <div class="hidden justify-end space-x-4 ml:space-x-8 md:flex">
+          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+            >Proyectos</a
+          >
+          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+            >Conóceme</a
+          >
+          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+            >Contáctame</a
+          >
+        </div>
+      </div>
+      <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+      <!-- Mobile Menu -->
+      <div>
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden md:hidden self-end py-8 mt-2 space-y-6 font-bold bg-veryLightGray sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+            >Proyectos</a
+          >
+          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+            >Conóceme</a
+          >
+          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+            >Contáctame</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section id="myself" class="w-auto">
+      <div class="flex flex-col pt-5 space-y-2 justify-center items-center">
+        <div class="w-1/4 md:max-w-250">
+          <img src="img/avatar-profile.png" alt="" class="rounded-full" />
+        </div>
+        <div
+          class="flex flex-col pt-4 m-3 text-center justify-center space-y-3"
+        >
+          <h1 class="text-4xl font-bold">Maikel Garcia</h1>
+          <p class="text-xl italic text-gray-300">Desarrollador Junior</p>
+          <p class="text-md text-center">
+            ¡Bienvenido! Aquí encontrarás una colección de mis proyectos e
+            información de interés sobre mí.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="techStack" class="w-full space-y-0">
+      <div class="flex flex-col mt-8">
+        <div
+          class="bg-veryLightGray justify-center shadow-2xl shadow-white flex"
+        >
+          <h1 class="text-center text-white flex text-xl leading-8">
+            Front-End Stack
+          </h1>
+        </div>
+        <div
+          class="flex flex-col ml:flex-row bg-bestWhite md:space-x-2 md:w-full"
+        >
+          <!--           Primer Stack Item
+                  -->
+          <div
+            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
+          >
+            <div class="mx-4">
+              <div class="w-24 ml:object-contain">
+                <img
+                  src="img/NextJS.png"
+                  alt=""
+                  class="object-scale-down ml:object-contain"
+                />
+              </div>
+              <h1 class="text-center font-bold text-black">Next.JS</h1>
+            </div>
+          </div>
+          <!--           Segundo Stack Item
+          -->
+          <div
+            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
+          >
+            <div class="mx-4">
+              <div class="w-24 ml:object-contain">
+                <img
+                  src="img/react.png"
+                  alt=""
+                  class="object-scale-down ml:object-contain"
+                />
+              </div>
+              <h1 class="text-center font-bold text-black relative -top-1">
+                React
+              </h1>
+            </div>
+          </div>
+
+          <div
+            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
+          >
+            <div class="w-44 flex ml:object-contain">
+              <img
+                src="img/trio.png"
+                alt=""
+                class="object-scale-down ml:object-contain"
+              />
+            </div>
+            <h1 class="text-center font-bold text-black">
+              HTML5/CSS/Javascript
+            </h1>
+          </div>
+          <!--           Quinto Stack Item
+          -->
+          <div
+            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
+          >
+            <div class="w-28 flex justify-center space-x-4">
+              <img
+                src="img/tailwind.png"
+                alt=""
+                class="object-scale-down ml:object-contain ml:w-1/2"
+              />
+              <img
+                src="img/bootstrap.png"
+                alt=""
+                class="object-scale-down ml:object-contain ml:w-1/2"
+              />
+            </div>
+            <h1 class="text-center font-bold text-black">
+              TailwindCSS/Bootstrap
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col mt-8">
+        <div
+          class="bg-veryLightGray justify-center shadow-2xl shadow-white flex"
+        >
+          <h1 class="text-center text-white flex text-xl leading-8">
+            Back-End Stack
+          </h1>
+        </div>
+        <div
+          class="flex flex-col ml:flex-row bg-bestWhite md:space-x-2 md:w-full"
+        >
+          <div
+            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
+          >
+            <div class="mx-4">
+              <div class="w-28 ml:object-contain">
+                <img
+                  src="img/node.png"
+                  alt=""
+                  class="object-scale-down ml:object-contain"
+                />
+              </div>
+              <h1 class="text-center font-bold text-black">NodeJS</h1>
+            </div>
+          </div>
+          <!--           Segundo Stack Item
+            -->
+          <div
+            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
+          >
+            <div class="mx-4">
+              <div class="w-28 ml:object-contain">
+                <img
+                  src="img/mysql.png"
+                  alt=""
+                  class="object-scale-down ml:object-contain"
+                />
+              </div>
+              <h1 class="text-center font-bold text-black">MYSQL</h1>
+            </div>
+          </div>
+
+          <!--             Tercer Stack Item
+ -->
+        </div>
+      </div>
+    </section>
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const nav = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+        nav.classList.toggle("flex");
+        nav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
