@@ -5,28 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+  
     <title>Mi portafolio</title>
   </head>
-  <body>
-    <nav id="Navbar" class="relative p-2 bg-veryLightGray">
-      <div class="flex flex-row items-center justify-center md:justify-between">
-        <div>
-          <a
-            class="text-left font-bold text-xl ml-6 italic md:inline cursor-pointer"
-            >mike<span class="text-blue-400">.</span>jrDev</a
-          >
-        </div>
-        <div class="hidden justify-end space-x-4 ml:space-x-8 md:flex">
-          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
-            >Proyectos</a
-          >
-          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
-            >Conóceme</a
-          >
-          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
-            >Contáctame</a
-          >
-        </div>
+  <body class="text-white">
+    <nav class="navbar py-4 ">
+      <div class="container mx-auto lg:block md:block xl:block hidden ">
+        <ul class="flex justify-center space-x-8">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </div>
       <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
         <span class="hamburger-top"></span>
@@ -34,222 +24,106 @@
         <span class="hamburger-bottom"></span>
       </button>
 
-      <!-- Mobile Menu -->
       <div>
         <div
           id="menu"
-          class="absolute flex-col items-center hidden md:hidden self-end py-8 mt-2 space-y-6 font-bold bg-veryLightGray sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+          class=" flex-col text-center hidden md:hidden self-end py-2 mt-2 space-y-4 font-bold  sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        ><ul class="flex-col justify-center space-y-4 ">
+          <li><a 
             >Proyectos</a
-          >
-          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+          ></li>
+          <li><a 
             >Conóceme</a
-          >
-          <a class="text-sm font-bold hover:text-gray-500 cursor-pointer"
+          ></li>
+          <li><a 
             >Contáctame</a
-          >
+          ></li>
+        </ul>
+          
         </div>
       </div>
+
+
+
     </nav>
-    <section id="myself" class="w-auto">
-      <div class="flex flex-col pt-5 space-y-2 justify-center items-center">
-        <div class="w-1/4 md:max-w-250">
-          <img src="img/avatar-profile.png" alt="" class="rounded-full" />
-        </div>
-        <div
-          class="flex flex-col pt-4 m-3 text-center justify-center space-y-3"
-        >
-          <h1 class="text-4xl font-bold">Maikel Garcia</h1>
-          <p class="text-xl italic text-gray-300">Desarrollador Junior</p>
-          <p class="text-md text-center">
-            ¡Bienvenido! Aquí encontrarás una colección de mis proyectos e
-            información de interés sobre mí.
-          </p>
-        </div>
+
+
+
+
+
+
+
+
+    <div class="container mx-auto py-10">
+      <div class="flex justify-center">
+        <img src="ruta/a/tu/imagen.jpg" alt="Mi foto" class="w-64 h-64 rounded-full object-cover shadow-lg">
       </div>
-    </section>
-
-    <section id="techStack" class="w-full space-y-0">
-      <div class="flex flex-col mt-8">
-        <div
-          class="bg-veryLightGray justify-center shadow-2xl shadow-white flex"
-        >
-          <h1 class="text-center text-white flex text-xl leading-8">
-            Front-End Stack
-          </h1>
-        </div>
-        <div
-          class="flex flex-col ml:flex-row bg-bestWhite md:space-x-2 md:w-full"
-        >
-          <!--           Primer Stack Item
-                  -->
-          <div
-            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
-          >
-            <div class="mx-4">
-              <div class="w-24 ml:object-contain">
-                <img
-                  src="img/NextJS.png"
-                  alt=""
-                  class="object-scale-down ml:object-contain"
-                />
-              </div>
-              <h1 class="text-center font-bold text-black">Next.JS</h1>
-            </div>
-          </div>
-          <!--           Segundo Stack Item
-          -->
-          <div
-            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
-          >
-            <div class="mx-4">
-              <div class="w-24 ml:object-contain">
-                <img
-                  src="img/react.png"
-                  alt=""
-                  class="object-scale-down ml:object-contain"
-                />
-              </div>
-              <h1 class="text-center font-bold text-black relative -top-1">
-                React
-              </h1>
-            </div>
-          </div>
-
-          <div
-            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
-          >
-            <div class="w-44 flex ml:object-contain">
-              <img
-                src="img/trio.png"
-                alt=""
-                class="object-scale-down ml:object-contain"
-              />
-            </div>
-            <h1 class="text-center font-bold text-black">
-              HTML5/CSS/Javascript
-            </h1>
-          </div>
-          <!--           Quinto Stack Item
-          -->
-          <div
-            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
-          >
-            <div class="w-28 flex justify-center space-x-4">
-              <img
-                src="img/tailwind.png"
-                alt=""
-                class="object-scale-down ml:object-contain ml:w-1/2"
-              />
-              <img
-                src="img/bootstrap.png"
-                alt=""
-                class="object-scale-down ml:object-contain ml:w-1/2"
-              />
-            </div>
-            <h1 class="text-center font-bold text-black">
-              TailwindCSS/Bootstrap
-            </h1>
-          </div>
-        </div>
+  
+      
+      <div class="text-center mt-10">
+        <h1 class="text-4xl font-normal italic">¡Hola! Soy <span class="text-blue-500 font-bold not-italic ">Maikel Garcia</span></h1>
+        <p class="mt-4 text-lg">Ingeniero informático y desarrollador.</p>
       </div>
-
-      <div class="flex flex-col mt-8">
-        <div
-          class="bg-veryLightGray justify-center shadow-2xl shadow-white flex"
-        >
-          <h1 class="text-center text-white flex text-xl leading-8">
-            Back-End Stack
-          </h1>
+  
+      <section class="mt-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Habilidades</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <i class="text-5xl text-blue-500 fas fa-code"></i>
+            <h3 class="mt-4 text-lg font-bold">Desarrollo web</h3>
+            <p class="mt-2">HTML, TailwindCSS, JavaScript, React, NextJS</p>
+          </div>
+          <div class="text-center">
+            <i class="text-5xl text-blue-500 fas fa-database"></i>
+            <h3 class="mt-4 text-lg font-bold">Bases de datos</h3>
+            <p class="mt-2">MySQL, MongoDB, PostgreSQL</p>
+          </div>
+          <div class="text-center">
+            <i class="text-5xl text-blue-500 fas fa-laptop-code"></i>
+            <h3 class="mt-4 text-lg font-bold">Front-end</h3>
+            <p class="mt-2">Responsive Design, UI/UX, React Native</p>
+          </div>
+          <div class="text-center">
+            <i class="text-5xl text-blue-500 fas fa-server"></i>
+            <h3 class="mt-4 text-lg font-bold">Back-end</h3>
+            <p class="mt-2">Node.js, Express, Flask, Django</p>
+          </div>
+          <div class="text-center">
+            <i class="text-5xl text-blue-500 fas fa-server"></i>
+            <h3 class="mt-4 text-lg font-bold">Tecnologías</h3>
+            <p class="mt-2">Sequelize, Mongoose, </p>
+          </div>
         </div>
-        <div
-          class="flex flex-col ml:flex-row bg-bestWhite md:space-x-2 md:w-full"
-        >
-          <div
-            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
-          >
-            <div class="mx-4">
-              <div class="w-28 ml:object-contain">
-                <img
-                  src="img/node.png"
-                  alt=""
-                  class="object-scale-down ml:object-contain"
-                />
-              </div>
-              <h1 class="text-center font-bold text-black">NodeJS</h1>
-            </div>
+      </section>
+  
+      <section class="mt-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Proyectos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-2">Proyecto 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo neque eu consectetur finibus. Donec finibus, felis ac iaculis mollis, est nisl feugiat augue.</p>
           </div>
-          <!--           Segundo Stack Item
-            -->
-
-       
-
-          <!--             Tercer Stack Item
- -->
-          <div
-            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
-          >
-            <div class="mx-4">
-              <div class="w-28 ml:object-contain">
-                <img
-                  src="img/django.png"
-                  alt=""
-                  class="object-scale-down ml:object-contain"
-                />
-              </div>
-              <h1 class="text-center font-bold text-black">Django</h1>
-            </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-2">Proyecto 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo neque eu consectetur finibus. Donec finibus, felis ac iaculis mollis, est nisl feugiat augue.</p>
           </div>
-
-          <!--             Tercer Stack Item
- -->
-          <div
-            class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
-          >
-            <div class="mx-4">
-              <div class="w-28 ml:object-contain">
-                <img
-                  src="img/python.png"
-                  alt=""
-                  class="object-scale-down ml:object-contain"
-                />
-              </div>
-              <h1 class="text-center font-bold text-black">Python</h1>
-            </div>
-          </div>
-
-          <!--             Tercer Stack Item
- -->
- <div
- class="flex ml:flex-1 flex-col hover:bg-gray-300 space-y-2 max-h-40 h-36 justify-center items-center shadow-md"
->
- <div class="mx-4">
-   <div class="w-28 ml:object-contain">
-     <img
-       src="img/mysql.png"
-       alt=""
-       class="object-scale-down ml:object-contain"
-     />
-   </div>
-   <h1 class="text-center font-bold text-black">MYSQL</h1>
- </div>
-</div> 
-
-          <!--             Tercer Stack Item
- -->
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <script>
       const btn = document.getElementById("menu-btn");
       const nav = document.getElementById("menu");
-
+    
       btn.addEventListener("click", () => {
         btn.classList.toggle("open");
         nav.classList.toggle("flex");
         nav.classList.toggle("hidden");
       });
     </script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
   </body>
+  
 </html>
+
+<!-- 
+ -->
