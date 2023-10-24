@@ -19,12 +19,12 @@ module.exports = {
         veryDarkBlue: "hsl(233, 12%, 13%)",
         veryPaleRed: "hsl(13, 100%, 96%)",
         veryLightGray: "rgb(48, 48, 48);",
-        bestWhite: "rgb(215 215 215 / 88%);",
+        bestWhite: "#F5F5F5;",
       },
       maxWidth: {
         250: "250px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

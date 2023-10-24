@@ -5,19 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Mi portafolio</title>
   </head>
-  <body class="text-white">
-    <nav class="navbar py-4 ">
-      <div class="container mx-auto lg:block md:block xl:block hidden ">
-        <ul class="flex justify-center space-x-8">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+  <body class="text-bestWhite">
+    <nav class="navbar py-4 flex-col">
+      <div class="flex-row justify-center">
+        <div class="lg:block md:block xl:block hidden">
+          <ul class="flex space-x-8">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
       </div>
+
       <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
         <span class="hamburger-top"></span>
         <span class="hamburger-middle"></span>
@@ -27,93 +37,201 @@
       <div>
         <div
           id="menu"
-          class=" flex-col text-center hidden md:hidden self-end py-2 mt-2 space-y-4 font-bold  sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        ><ul class="flex-col justify-center space-y-4 ">
-          <li><a 
-            >Proyectos</a
-          ></li>
-          <li><a 
-            >Conóceme</a
-          ></li>
-          <li><a 
-            >Contáctame</a
-          ></li>
-        </ul>
-          
+          class="flex-col text-center hidden md:hidden py-2 mt-2 space-y-4 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <ul class="flex-col justify-center space-y-4">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
         </div>
       </div>
-
-
-
     </nav>
-
-
-
-
-
-
-
-
-    <div class="container mx-auto py-10">
-      <div class="flex justify-center">
-        <img src="ruta/a/tu/imagen.jpg" alt="Mi foto" class="w-64 h-64 rounded-full object-cover shadow-lg">
-      </div>
-  
-      
-      <div class="text-center mt-10">
-        <h1 class="text-4xl font-normal italic">¡Hola! Soy <span class="text-blue-500 font-bold not-italic ">Maikel Garcia</span></h1>
-        <p class="mt-4 text-lg">Ingeniero informático y desarrollador.</p>
-      </div>
-  
-      <section class="mt-16">
-        <h2 class="text-2xl font-bold mb-8 text-center">Habilidades</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div class="text-center">
-            <i class="text-5xl text-blue-500 fas fa-code"></i>
-            <h3 class="mt-4 text-lg font-bold">Desarrollo web</h3>
-            <p class="mt-2">HTML, TailwindCSS, JavaScript, React, NextJS</p>
-          </div>
-          <div class="text-center">
-            <i class="text-5xl text-blue-500 fas fa-database"></i>
-            <h3 class="mt-4 text-lg font-bold">Bases de datos</h3>
-            <p class="mt-2">MySQL, MongoDB, PostgreSQL</p>
-          </div>
-          <div class="text-center">
-            <i class="text-5xl text-blue-500 fas fa-laptop-code"></i>
-            <h3 class="mt-4 text-lg font-bold">Front-end</h3>
-            <p class="mt-2">Responsive Design, UI/UX, React Native</p>
-          </div>
-          <div class="text-center">
-            <i class="text-5xl text-blue-500 fas fa-server"></i>
-            <h3 class="mt-4 text-lg font-bold">Back-end</h3>
-            <p class="mt-2">Node.js, Express, Flask, Django</p>
-          </div>
-          <div class="text-center">
-            <i class="text-5xl text-blue-500 fas fa-server"></i>
-            <h3 class="mt-4 text-lg font-bold">Tecnologías</h3>
-            <p class="mt-2">Sequelize, Mongoose, </p>
+    <!-- SECCION HERO
+ -->
+    <div class="mx-auto py-40" id="inicio">
+      <div class="flex flex-col md:flex-row md:jrustify-evenly">
+        <div class="flex justify-center md:ml-auto">
+          <img
+            src="./img/fotoDePerfil.jpeg"
+            alt="Mi foto"
+            class="w-64 h-64 md:w-96 md:h-96 rounded-full relative object-cover shadow-lg"
+          />
+        </div>
+        <div class="text-center mt-10 flex-row md:mr-auto md:ml-8">
+          <h1 class="text-4xl font-normal italic">
+            ¡Hola! Soy
+            <span class="text-blue-500 font-bold not-italic"
+              >Maikel Garcia</span
+            >
+          </h1>
+          <p class="mt-4 text-lg">Ingeniero informático y desarrollador</p>
+          <div class="space-x-6">
+            <a
+              class="btn btn-wide btn-primary mt-4 outline-2 outline"
+              href="#about"
+            >
+              Sobre mí
+            </a>
+            <a class="btn btn-ghost mt-4 outline-2 outline">Github</a>
           </div>
         </div>
-      </section>
-  
-      <section class="mt-16">
-        <h2 class="text-2xl font-bold mb-8 text-center">Proyectos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-gray-800 rounded-lg p-6">
-            <h3 class="text-xl font-bold mb-2">Proyecto 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo neque eu consectetur finibus. Donec finibus, felis ac iaculis mollis, est nisl feugiat augue.</p>
-          </div>
-          <div class="bg-gray-800 rounded-lg p-6">
-            <h3 class="text-xl font-bold mb-2">Proyecto 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo neque eu consectetur finibus. Donec finibus, felis ac iaculis mollis, est nisl feugiat augue.</p>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
+
+    <!-- SECCION DE SOBRE MÍ
+ -->
+
+    <section class="bg-slate-100 text-black flex flex-col" id="about">
+      <h3 class="text-center mt-4 mb-12 font-bold text-2xl text-blue-500">
+        SOBRE MÍ
+      </h3>
+      <div class="container mx-auto justify-center">
+        <div class="flex flex-col md:flex-row">
+          <div>
+            <p class="text-gray-800 text-lg pb-4 md:mx-0 mx-4">
+              Me llamo Maikel Garcia, un estudiante de ingeniería informática
+              cuyo entusiasmo por la programación no conoce límites. Mi
+              meticulosidad es la fuerza motriz detrás de mi trabajo, siempre en
+              busca de la máxima eficiencia en cada línea de código que escribo.
+              Como un desarrollador que siempre busca la excelencia, me esfuerzo
+              por estar a la vanguardia de las últimas tendencias y y técnicas
+              en el amplio espectro de la tecnología. Con cada día que pasa, me
+              encuentro aún más fascinado por el potencial ilimitado que ofrece
+              la programación.
+            </p>
+          </div>
+        </div>
+        <div class="justify-center flex flex-col items-center">
+          <h1 class="text-center italic text-lg">Soy...</h1>
+          <div class="pb-12 md:space-x-12 space-y-2 space-x-2">
+            <span class="badge badge-primary p-4 font-bold">Creativo</span>
+            <span class="badge badge-success p-4 font-bold">Resolutivo</span>
+            <span class="badge badge-info p-4 font-bold">Autodidacta</span>
+            <span class="badge badge-warning p-4 font-bold">Innovador</span>
+            <span class="badge badge-secondary p-4 font-bold"
+              >Colaborativo</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION DE HABILIDADES
+ -->
+    <section class="container mx-auto mt-6" id="habilidades">
+      <h2 class="text-4xl font-bold mb-8 text-center text-bestWhite">
+        Habilidades
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="border-slate-400 border flex flex-col items-center justify-center bg-white bg-opacity-25 rounded-lg p-8"
+        >
+          <h3 class="text-2xl font-bold text-bestWhite mb-auto rounded-lg p-2">
+            Front-end
+          </h3>
+
+          <p class="mb-auto mt-4 text-lg text-bestWhite text-center">
+            HTML5, TailwindCSS, Bootstrap, DaisyUI, JavaScript, React, React
+            Native
+          </p>
+        </div>
+
+        <div
+          class="border-slate-400 border flex flex-col items-center justify-center bg-white bg-opacity-25 rounded-lg p-8"
+        >
+          <h3 class="text-2xl font-bold text-bestWhite mb-auto">Back-end</h3>
+          <p class="mb-auto mt-4 text-lg text-bestWhite e text-center">
+            Node.js, Express, Python, Typescript, Django, MySQL, Sequelize,
+            MongoDB, Mongoose
+          </p>
+        </div>
+        <div
+          class="border-slate-400 border flex flex-col items-center justify-center bg-white bg-opacity-25 rounded-lg p-8 mb-auto"
+        >
+          <h3 class="text-2xl font-bold text-bestWhite">&lt;/ &gt</h3>
+          <p class="mb-auto mt-4 text-lg text-bestWhite text-center">
+            Git, Github
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION DE PROYECTOS
+ -->
+
+    <section class="mx-auto my-20 w-full bg-slate-100" id="proyectos">
+      <div class="container mx-auto my-20 w-full">
+        <h2 class="text-2xl font-bold mb-8 text-center">Proyectos</h2>
+        <div class="mockup-phone">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo phone-1"><img src="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER
+ -->
+    <footer class="p-4 bg-neutral text-neutral-content">
+      <nav class="">
+        <div class="flex flex-row justify-evenly">
+          <div>
+            <h3>Github</h3>
+            <a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <h3>Correo</h3>
+            <a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                ></path></svg
+            ></a>
+          </div>
+          <div>
+            <h3>Fiverr</h3>
+            <a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+
     <script>
       const btn = document.getElementById("menu-btn");
       const nav = document.getElementById("menu");
-    
+
       btn.addEventListener("click", () => {
         btn.classList.toggle("open");
         nav.classList.toggle("flex");
@@ -122,7 +240,6 @@
     </script>
     <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
   </body>
-  
 </html>
 
 <!-- 

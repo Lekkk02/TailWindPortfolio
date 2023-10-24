@@ -3,13 +3,46 @@
 @tailwind utilities;
 
 
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background: linear-gradient(to bottom, #0c1f46, #0a0524);
+  background: linear-gradient(to right, #132f66, #1c124e, #0c0822);
+  font-family: 'Exo', sans-serif;
+  
 }
 
 
+
+.diagonal-split {
+  position: relative;
+  background: black;
+  overflow: hidden;
+}
+
+.diagonal-split::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: blue;
+  transform-origin: 0 0;
+  transform: skewY(-10deg);
+}
+
+
+
+
+
+
+
+
+
+
 .navbar {
-position: fixed;
+position: static;
 top: 0;
 left: 0;
 width: 100%;
@@ -33,7 +66,6 @@ margin: 0 10px;
 .navbar a {
 color: white;
 text-decoration: none;
-font-weight: bold;
 font-size: 18px;
 transition: opacity 0.3s ease;
 }
@@ -48,7 +80,6 @@ opacity: 0.7;
   height: 24px;
   transition: all 0.25s;
   position: relative;
-  left: 50%;
 }
 
 .hamburger-top,
