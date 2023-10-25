@@ -50,7 +50,7 @@
     </nav>
     <!-- SECCION HERO
  -->
-    <div class="mx-auto py-40" id="inicio">
+    <div class="mx-auto py-32" id="inicio">
       <div class="flex flex-col md:flex-row md:jrustify-evenly">
         <div class="flex justify-center md:ml-auto">
           <img
@@ -96,16 +96,16 @@
               meticulosidad es la fuerza motriz detrás de mi trabajo, siempre en
               busca de la máxima eficiencia en cada línea de código que escribo.
               Como un desarrollador que siempre busca la excelencia, me esfuerzo
-              por estar a la vanguardia de las últimas tendencias y y técnicas
-              en el amplio espectro de la tecnología. Con cada día que pasa, me
+              por estar a la vanguardia de las últimas tendencias y técnicas en
+              el amplio espectro de la tecnología. Con cada día que pasa, me
               encuentro aún más fascinado por el potencial ilimitado que ofrece
               la programación.
             </p>
           </div>
         </div>
-        <div class="justify-center flex flex-col items-center">
+        <div class="justify-center flex flex-col md:items-center">
           <h1 class="text-center italic text-lg">Soy...</h1>
-          <div class="pb-12 md:space-x-12 space-y-2 space-x-2">
+          <div class="pb-12 md:space-x-12 space-y-2 space-x-4">
             <span class="badge badge-primary p-4 font-bold">Creativo</span>
             <span class="badge badge-success p-4 font-bold">Resolutivo</span>
             <span class="badge badge-info p-4 font-bold">Autodidacta</span>
@@ -162,15 +162,119 @@
     <!-- SECCION DE PROYECTOS
  -->
 
-    <section class="mx-auto my-20 w-full bg-slate-100" id="proyectos">
-      <div class="container mx-auto my-20 w-full">
-        <h2 class="text-2xl font-bold mb-8 text-center">Proyectos</h2>
-        <div class="mockup-phone">
+    <section
+      class="mx-auto mt-20 w-full bg-slate-100 text-black"
+      id="proyectos"
+    >
+      <div class="container mx-auto flex flex-col">
+        <h1 class="text-4xl font-bold mb-8 text-center text-blue-500 mt-12">
+          Proyectos
+        </h1>
+
+        <div
+          class="grid md:grid-flow-col md:justify-stretch grid-flow-row justify-center"
+        >
+          <div class="container mx-auto my-20 w-full text-bestWhite">
+            <div class="card w-96 bg-blue-950 shadow-xl">
+              <figure>
+                <img src="./img/SS-SELLA.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Aplicación web para apuestas de carreras de caballos
+                </h2>
+                <ul class="list-disc pl-5 space-y-2 text-bestWhite">
+                  <li>
+                    Los clientes pueden visualizar detalles de las carreras.
+                  </li>
+                  <li>
+                    Los cajeros pueden gestionar tickets y generar facturas.
+                  </li>
+                  <li>Se pueden generar reportes de las últimas apuestas.</li>
+                  <li>Se puede verificar el estado de un ticket específico.</li>
+                </ul>
+
+                <div class="card-actions justify-end">
+                  <div>
+                    <a
+                      class="btn btn-secondary"
+                      href="https://www.sellatupolla.com"
+                      target="_blank"
+                      >Live demo</a
+                    >
+                    <a class="btn btn-outline btn-info" target="_blank"
+                      >Repositorio</a
+                    >
+                  </div>
+
+                  <div>
+                    <h1>Tech Stack</h1>
+                    <div class="badge badge-primary">NextJS</div>
+                    <div class="badge badge-primary">MongoDB</div>
+                    <div class="badge badge-primary">Mongoose</div>
+                    <div class="badge badge-primary">TailwindCSS</div>
+                    <div class="badge badge-primary">Javascript</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mx-auto my-20 w-full text-bestWhite">
+            <div class="card w-96 bg-blue-950 shadow-xl">
+              <figure>
+                <img src="./img/SS-SELLA.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Aplicación web para apuestas de carreras de caballos
+                </h2>
+                <ul class="list-disc pl-5 space-y-2 text-bestWhite">
+                  <li>
+                    Los clientes pueden visualizar detalles de las carreras.
+                  </li>
+                  <li>
+                    Los cajeros pueden gestionar tickets y generar facturas.
+                  </li>
+                  <li>Se pueden generar reportes de las últimas apuestas.</li>
+                  <li>Se puede verificar el estado de un ticket específico.</li>
+                </ul>
+
+                <div class="card-actions justify-end">
+                  <div>
+                    <a
+                      class="btn btn-secondary"
+                      href="https://www.sellatupolla.com"
+                      target="_blank"
+                      >Live demo</a
+                    >
+                    <a class="btn btn-outline btn-info" target="_blank"
+                      >Repositorio</a
+                    >
+                  </div>
+
+                  <div>
+                    <h1>Tech Stack</h1>
+                    <div class="badge badge-primary">NextJS</div>
+                    <div class="badge badge-primary">MongoDB</div>
+                    <div class="badge badge-primary">Mongoose</div>
+                    <div class="badge badge-primary">TailwindCSS</div>
+                    <div class="badge badge-primary">Javascript</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--         BORRADOR DIV TELEFONO
+ -->
+        <!--   <div class="mockup-phone">
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo phone-1"><img src="" /></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- FOOTER
