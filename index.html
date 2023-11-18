@@ -12,14 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-
+    <script
+      src="https://kit.fontawesome.com/1c0b2e5b95.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Mi portafolio</title>
   </head>
   <body class="text-bestWhite">
-    <nav class="navbar py-4 flex-col">
+    <nav class="navbar py-4 flex-col border-b border-gray-600">
       <div class="flex-row justify-center">
         <div class="lg:block md:block xl:block hidden">
-          <ul class="flex space-x-8">
+          <ul class="flex gap-x-8">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -37,9 +40,9 @@
       <div>
         <div
           id="menu"
-          class="flex-col text-center hidden md:hidden py-2 mt-2 space-y-4 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          class="flex-col text-center hidden md:hidden py-2 mt-2 gap-y-4 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
         >
-          <ul class="flex-col justify-center space-y-4">
+          <ul class="flex-col justify-center gap-y-4">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -80,7 +83,7 @@
 
           <div class="relative ms-4 mt-4 md:mt-0">
             <img
-              class="w-full rounded-full md:rounded-3xl bg-slate-900"
+              class="w-full rounded-full md:rounded-3xl bg-slate-900 border-gray-500 border"
               src="./img/FireFly2.png"
               alt="Image Description"
             />
@@ -97,8 +100,11 @@
     <!-- SECCION DE SOBRE MÍ
  -->
 
-    <section class="bg-slate-100 text-black flex flex-col" id="about">
-      <h3 class="text-center mt-4 mb-12 font-bold text-2xl text-blue-600">
+    <section
+      class="bg-slate-100 text-black flex flex-col transition-all ease-in-out duration-300"
+      id="about"
+    >
+      <h3 class="text-center mt-16 mb-8 font-bold text-4xl text-blue-600">
         SOBRE MÍ
       </h3>
       <div class="container mx-auto justify-center">
@@ -117,9 +123,11 @@
             </p>
           </div>
         </div>
-        <div class="justify-center flex flex-col md:items-center">
+        <div class="justify-center flex flex-col md:items-center gap-y-3">
           <h1 class="text-center italic text-lg">Soy...</h1>
-          <div class="pb-12 md:space-x-12 space-y-2 space-x-4">
+          <div
+            class="pb-12 md:gap-x-12 gap-x-4 gap-y-2 flex justify-center flex-wrap"
+          >
             <span class="badge badge-primary p-4 font-bold">Creativo</span>
             <span class="badge badge-success p-4 font-bold">Resolutivo</span>
             <span class="badge badge-info p-4 font-bold">Autodidacta</span>
@@ -136,10 +144,114 @@
  -->
     <section class="container mx-auto mt-6" id="habilidades">
       <h2 class="text-4xl font-bold mb-8 text-center text-bestWhite">
-        Habilidades
+        HABILIDADES
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="flex flex-col md:flex-row justify-evenly text-center gap-y-16"
+      >
+        <div class="self-center">
+          <div
+            class="flex items-center justify-center w-14 h-12 mb-1 rounded-lg bg-indigo-600 mx-auto md:w-16 md:h-16"
+          >
+            <i class="fa-brands fa-html5 fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <h1 class="font-bold text-lg md:text-xl">Frontend</h1>
+          <div
+            class="border-b border-t mt-4 rounded-lg p-8 flex gap-x-4 flex-wrap bg-transparent"
+          >
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=fff&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&amp;logoColor=000&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/React-61DAFB?logo=react&amp;logoColor=000&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&amp;logoColor=fff&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&amp;logoColor=fff&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&amp;logoColor=fff&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Material%20Design-757575?logo=materialdesign&amp;logoColor=fff&amp;style=flat"
+                class="my-1"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black&style=flat
+                "
+                class="my-1"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/DaisyUI-0E7490?logo=data:image/svg+xml;base64,...&logoColor=white&style=flat
+
+                "
+                class="my-1"
+              ></object>
+            </div>
+          </div>
+        </div>
+        <div class="self-center">
+          <div
+            class="flex items-center justify-center w-14 h-12 mb-1 rounded-lg bg-indigo-600 mx-auto md:w-16 md:h-16"
+          >
+            <i class="fa-solid fa-terminal fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <h1 class="font-bold text-lg md:text-xl">Backend</h1>
+          <div class="border-b border-t mt-4 rounded-lg p-32"></div>
+        </div>
+        <div class="self-center">
+          <div
+            class="flex items-center justify-center w-14 h-12 mb-1 rounded-lg bg-indigo-600 mx-auto md:w-16 md:h-16"
+          >
+            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <h1 class="font-bold text-lg md:text-xl">Tools</h1>
+          <div class="border-b border-t mt-4 rounded-lg p-32"></div>
+        </div>
+      </div>
+
+      <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div
           class="border-slate-400 border flex flex-col items-center justify-center bg-white bg-opacity-25 rounded-lg p-8"
         >
@@ -170,7 +282,7 @@
             Git, Github
           </p>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- SECCION DE PROYECTOS
@@ -200,7 +312,7 @@
                 <h2 class="card-title">
                   Aplicación web para apuestas de carreras de caballos
                 </h2>
-                <ul class="list-disc pl-5 space-y-2 text-bestWhite">
+                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
                   <li>
                     Los clientes pueden visualizar detalles de las carreras.
                   </li>
@@ -249,7 +361,7 @@
                   Aplicación móvil para gestión de ordenes de reparación de
                   equipos
                 </h2>
-                <ul class="list-disc pl-5 space-y-2 text-bestWhite">
+                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
                   <li>
                     Los clientes pueden visualizar detalles de las carreras.
                   </li>

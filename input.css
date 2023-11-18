@@ -7,9 +7,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(to right, #132f66, #1c124e, #0c0822);
+  background: linear-gradient(to right, #163779, #231661, #181044,  #0f0a2b);
   background-size: 200% 200%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 5s ease infinite;
   font-family: 'Exo', sans-serif;
   
 }
@@ -52,14 +52,13 @@ body {
 
 
 
-
 .navbar {
 position: static;
 top: 0;
 left: 0;
 width: 100%;
 backdrop-filter: blur(10px);
-background-color: rgba(228, 228, 228, 0.089);
+background-color: rgba(112, 112, 112, 0.24);
 z-index: 999;
 }
 
