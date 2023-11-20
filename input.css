@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(to right, #163779, #231661, #181044,  #0f0a2b);
+  background: linear-gradient(to right, #13316b, #231661, #181044,  #0f0a2b);
   background-size: 200% 200%;
   animation: gradient 5s ease infinite;
   font-family: 'Exo', sans-serif;
@@ -26,39 +26,20 @@ body {
 
 
 
-.diagonal-split {
-  position: relative;
-  background: black;
-  overflow: hidden;
+
+#myself {
+  background: linear-gradient( #163779, #231661, #181044,  #0f0a2b);
 }
-
-.diagonal-split::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: blue;
-  transform-origin: 0 0;
-  transform: skewY(-10deg);
-}
-
-
-
-
-
-
 
 
 
 .navbar {
-position: static;
+position: sticky;
 top: 0;
 left: 0;
 width: 100%;
 backdrop-filter: blur(10px);
-background-color: rgba(112, 112, 112, 0.24);
+background-color: rgba(9, 1, 37, 0.5);
 z-index: 999;
 }
 

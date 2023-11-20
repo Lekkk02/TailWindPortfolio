@@ -53,7 +53,9 @@
     </nav>
     <!-- SECCION HERO
  -->
-    <section id="hero" class="my-24">
+    <section class="mt-28 mb-48">
+      <div id="inicio" class="relative -top-36"></div>
+
       <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Grid -->
         <div
@@ -81,11 +83,12 @@
             </div>
           </div>
 
-          <div class="relative ms-4 mt-4 md:mt-0">
+          <div class="relative ms-4 mt-4 md:mt-0 flex justify-center">
             <img
-              class="w-full rounded-full md:rounded-3xl bg-slate-900 border-gray-500 border"
+              class="w-[70%] rounded-b-full md:rounded-3xl"
               src="./img/FireFly2.png"
               alt="Image Description"
+              id="myself"
             />
 
             <div
@@ -101,9 +104,10 @@
  -->
 
     <section
-      class="bg-slate-100 text-black flex flex-col transition-all ease-in-out duration-300"
-      id="about"
+      class="bg-bestWhite text-black flex flex-col transition-all ease-in-out duration-300"
     >
+      <div id="about" class="relative -top-24"></div>
+
       <h3 class="text-center mt-16 mb-8 font-bold text-4xl text-blue-600">
         SOBRE MÍ
       </h3>
@@ -142,74 +146,73 @@
 
     <!-- SECCION DE HABILIDADES
  -->
-    <section class="container mx-auto mt-6" id="habilidades">
-      <h2 class="text-4xl font-bold mb-8 text-center text-bestWhite">
+    <section class="container mx-auto mt-6">
+      <div id="habilidades" class="relative -top-24"></div>
+      <h2 class="text-4xl font-bold mb-12 text-center text-bestWhite mt-16">
         HABILIDADES
       </h2>
 
       <div
-        class="flex flex-col md:flex-row justify-evenly text-center gap-y-16"
+        class="flex flex-col md:flex-row justify-center text-center gap-y-16 gap-x-16"
       >
-        <div class="self-center">
+        <div class="self-center flex-1">
           <div
             class="flex items-center justify-center w-14 h-12 mb-1 rounded-lg bg-indigo-600 mx-auto md:w-16 md:h-16"
           >
             <i class="fa-brands fa-html5 fa-2xl" style="color: #ffffff"></i>
           </div>
           <h1 class="font-bold text-lg md:text-xl">Frontend</h1>
-          <div
-            class="border-b border-t mt-4 rounded-lg p-8 flex gap-x-4 flex-wrap bg-transparent"
-          >
+          <div class="border-b border-t mt-4 rounded-lg p-8">
             <div class="inline-flex mr-2">
               <object
                 data="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=fff&amp;style=flat"
-                class="my-1"
+                class="my-1 rounded-lg"
               ></object>
             </div>
 
             <div class="inline-flex mr-2">
               <object
                 data="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=flat"
-                class="my-1"
+                class="my-1 rounded-lg"
               ></object>
             </div>
             <div class="inline-flex mr-2">
               <object
                 data="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&amp;logoColor=000&amp;style=flat"
-                class="my-1"
+                class="my-1 rounded-lg"
               ></object>
             </div>
 
             <div class="inline-flex mr-2">
               <object
                 data="https://img.shields.io/badge/React-61DAFB?logo=react&amp;logoColor=000&amp;style=flat"
-                class="my-1"
+                class="my-1 rounded-lg"
               ></object>
             </div>
 
             <div class="inline-flex mr-2">
               <object
                 data="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&amp;logoColor=fff&amp;style=flat"
-                class="my-1"
+                class="my-1 rounded-lg"
               ></object>
             </div>
             <div class="inline-flex mr-2">
               <object
                 data="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&amp;logoColor=fff&amp;style=flat"
-                class="my-1"
+                class="my-1 rounded-lg"
               ></object>
             </div>
             <div class="inline-flex mr-2">
               <object
                 data="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&amp;logoColor=fff&amp;style=flat"
-                class="my-1"
+                class="my-1 rounded-lg"
               ></object>
             </div>
 
             <div class="inline-flex mr-2">
               <object
-                data="https://img.shields.io/badge/Material%20Design-757575?logo=materialdesign&amp;logoColor=fff&amp;style=flat"
-                class="my-1"
+                data="https://img.shields.io/badge/Material%20UI-757575?logo=materialdesign&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
               ></object>
             </div>
 
@@ -217,7 +220,7 @@
               <object
                 data="https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black&style=flat
                 "
-                class="my-1"
+                class="rounded-lg"
               ></object>
             </div>
 
@@ -226,72 +229,102 @@
                 data="https://img.shields.io/badge/DaisyUI-0E7490?logo=data:image/svg+xml;base64,...&logoColor=white&style=flat
 
                 "
-                class="my-1"
+                class="rounded-lg"
               ></object>
             </div>
           </div>
         </div>
-        <div class="self-center">
+        <div class="self-center flex-1">
           <div
             class="flex items-center justify-center w-14 h-12 mb-1 rounded-lg bg-indigo-600 mx-auto md:w-16 md:h-16"
           >
             <i class="fa-solid fa-terminal fa-2xl" style="color: #ffffff"></i>
           </div>
           <h1 class="font-bold text-lg md:text-xl">Backend</h1>
-          <div class="border-b border-t mt-4 rounded-lg p-32"></div>
+          <div class="border-b border-t mt-4 rounded-lg p-8">
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Express-000?logo=express&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Sequelize-52B0E7?logo=sequelize&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Mongoose-800?logo=mongoose&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Python-3776AB?logo=python&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Django-092E20?logo=django&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+          </div>
         </div>
-        <div class="self-center">
+        <div class="self-center flex-1">
           <div
             class="flex items-center justify-center w-14 h-12 mb-1 rounded-lg bg-indigo-600 mx-auto md:w-16 md:h-16"
           >
             <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
           </div>
           <h1 class="font-bold text-lg md:text-xl">Tools</h1>
-          <div class="border-b border-t mt-4 rounded-lg p-32"></div>
+          <div class="border-b border-t mt-4 rounded-lg p-8">
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/Git-F05032?logo=git&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+            <div class="inline-flex mr-2">
+              <object
+                data="https://img.shields.io/badge/GitHub-181717?logo=github&amp;logoColor=fff&amp;style=flat"
+                class="my-1 rounded-lg"
+              ></object>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div
-          class="border-slate-400 border flex flex-col items-center justify-center bg-white bg-opacity-25 rounded-lg p-8"
-        >
-          <h3 class="text-2xl font-bold text-bestWhite mb-auto rounded-lg p-2">
-            Front-end
-          </h3>
-
-          <p class="mb-auto mt-4 text-lg text-bestWhite text-center">
-            HTML5, TailwindCSS, Bootstrap, DaisyUI, JavaScript, React, React
-            Native
-          </p>
-        </div>
-
-        <div
-          class="border-slate-400 border flex flex-col items-center justify-center bg-white bg-opacity-25 rounded-lg p-8"
-        >
-          <h3 class="text-2xl font-bold text-bestWhite mb-auto">Back-end</h3>
-          <p class="mb-auto mt-4 text-lg text-bestWhite e text-center">
-            Node.js, Express, Python, Typescript, Django, MySQL, Sequelize,
-            MongoDB, Mongoose
-          </p>
-        </div>
-        <div
-          class="border-slate-400 border flex flex-col items-center justify-center bg-white bg-opacity-25 rounded-lg p-8 mb-auto"
-        >
-          <h3 class="text-2xl font-bold text-bestWhite">&lt;/ &gt</h3>
-          <p class="mb-auto mt-4 text-lg text-bestWhite text-center">
-            Git, Github
-          </p>
-        </div>
-      </div> -->
     </section>
 
     <!-- SECCION DE PROYECTOS
  -->
 
-    <section
-      class="mx-auto mt-20 w-full bg-slate-100 text-black"
-      id="proyectos"
-    >
+    <section class="mx-auto mt-20 w-full bg-bestWhite text-black">
+      <div id="proyectos" class="relative -top-16"></div>
+
       <div class="container mx-auto flex flex-col">
         <h1 class="text-4xl font-bold mb-8 text-center text-blue-500 mt-12">
           Proyectos
