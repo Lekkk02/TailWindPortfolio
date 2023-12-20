@@ -80,7 +80,12 @@
               >
                 Sobre mí
               </a>
-              <a class="btn btn-ghost mt-4 outline-2 outline">Github</a>
+              <a
+                class="btn btn-ghost mt-4 outline-2 outline"
+                href="https://github.com/Lekkk02"
+                target="_blank"
+                >Github</a
+              >
             </div>
           </div>
 
@@ -327,7 +332,7 @@
     <!-- SECCION DE PROYECTOS
  -->
 
-    <section class="mx-auto mt-20 w-full bg-bestWhite text-black">
+    <section class="mt-20 w-full bg-bestWhite text-black justify-center flex">
       <div id="proyectos" class="relative -top-16"></div>
 
       <div class="mx-auto flex flex-col">
@@ -335,16 +340,19 @@
           PROYECTOS
         </h1>
 
-        <!-- CARD APP APUESTA
- -->
-
         <div
-          class="grid md:grid-flow-col md:justify-around grid-flow-row justify-center"
+          class="grid md:grid-flow-col w-fit mx-4 grid-flow-row justify-center gap-x-24 md:grid-cols-2 md:grid-rows-2"
         >
-          <div class="container mx-auto my-20 w-full text-bestWhite">
+          <!-- CARD APP APUESTA
+ -->
+          <div class="container mx-auto my-12 w-full text-bestWhite">
             <div class="card w-96 bg-blue-950 shadow-xl">
-              <figure>
-                <img src="./img/SS-SELLA.png" alt="Shoes" />
+              <figure class="bg-white h-44">
+                <img
+                  src="./img/SS-SELLA.png"
+                  alt="Shoes"
+                  class="object-contain"
+                />
               </figure>
               <div class="card-body">
                 <h2 class="card-title">
@@ -363,8 +371,10 @@
 
                 <div class="card-actions justify-end">
                   <div>
-                    <a class="btn btn-secondary" target="_blank">Live demo</a>
-                    <a class="btn btn-outline btn-info" target="_blank"
+                    <a
+                      class="btn btn-outline btn-info"
+                      target="_blank"
+                      href="https://github.com/Lekkk02/Loto"
                       >Repositorio</a
                     >
                   </div>
@@ -386,10 +396,10 @@
 
           <!-- CARD APP RN
  -->
-          <div class="container mx-auto my-20 w-full text-bestWhite">
+          <div class="container mx-auto my-12 w-full text-bestWhite">
             <div class="card w-96 bg-blue-950 shadow-xl">
               <figure class="bg-white h-44">
-                <img src="./img/React_Native_Logo.png" alt="Shoes" />
+                <img src="./img/React_Native_Logo.png" alt="" />
               </figure>
               <div class="card-body">
                 <h2 class="card-title">
@@ -415,8 +425,10 @@
 
                 <div class="card-actions justify-end">
                   <div>
-                    <a class="btn btn-secondary" target="_blank">Live demo</a>
-                    <a class="btn btn-outline btn-info" target="_blank"
+                    <a
+                      class="btn btn-outline btn-info"
+                      target="_blank"
+                      href="https://github.com/Lekkk02/AppTallerV3"
                       >Repositorio</a
                     >
                   </div>
@@ -435,72 +447,166 @@
               </div>
             </div>
           </div>
-        </div>
+          <!-- CARD APP DJANGO -->
+          <div class="container mx-auto my-12 w-full text-bestWhite">
+            <div class="card w-96 bg-blue-950 shadow-xl">
+              <figure class="bg-white h-44">
+                <img src="./img/GameTopicIndex.jpeg" alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Foro de documentación de videojuegos</h2>
+                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
+                  <li>
+                    Los usuarios pueden visitar cada videojuego, hacer
+                    comentarios y puntuarlos
+                  </li>
+                  <li>Se generan reportes en PDF de los juegos</li>
+                  <li>
+                    Los administradores pueden banear y sancionar usuarios. Los
+                    administradores pueden añadir y eliminar videojuegos
+                  </li>
+                </ul>
 
-        <!--         BORRADOR DIV TELEFONO
- -->
-        <!--   <div class="mockup-phone">
-          <div class="camera"></div>
-          <div class="display">
-            <div class="artboard artboard-demo phone-1"><img src="" /></div>
+                <div class="card-actions justify-end">
+                  <div>
+                    <a
+                      class="btn btn-outline btn-info"
+                      target="_blank"
+                      href="https://github.com/PichiGod/gametopic-pichi"
+                      >Repositorio</a
+                    >
+                  </div>
+
+                  <div>
+                    <h1>Tech Stack</h1>
+                    <div class="badge badge-primary">React</div>
+                    <div class="badge badge-primary">MySQL</div>
+                    <div class="badge badge-primary">Sequelize</div>
+                    <div class="badge badge-primary">NodeJS</div>
+                    <div class="badge badge-primary">Express</div>
+                    <div class="badge badge-primary">Bootstrap</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div> -->
+          <!-- CARD APP GAMETOPIC -->
+          <div class="container mx-auto my-12 w-full text-bestWhite">
+            <div class="card w-96 bg-blue-950 shadow-xl">
+              <figure class="bg-white h-44">
+                <img src="./img/django.png" alt="" class="h-24" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">SocialApp DevTalk (En desarrollo)</h2>
+                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
+                  <li>
+                    Los usuarios crearán preguntas, las cuales se vuelven salas
+                    de chat hasta que el usuario cierre la pregunta o la marque
+                    como resuelta.
+                  </li>
+                  <li>Login / Registro de usuarios</li>
+                  <li>
+                    Los usuarios pueden añadir a otros usuarios como amigos
+                  </li>
+                  <li>
+                    Los usuarios que han creado una sala de chat tienen el
+                    privilegio de banear a un usuario de esa sala
+                  </li>
+                </ul>
+
+                <div class="card-actions justify-end">
+                  <div>
+                    <a
+                      class="btn btn-outline btn-info"
+                      href="https://github.com/Lekkk02/SocialAppDjango"
+                      target="_blank"
+                      >Repositorio</a
+                    >
+                  </div>
+
+                  <div>
+                    <h1>Tech Stack</h1>
+                    <div class="badge badge-primary">Django</div>
+                    <div class="badge badge-primary">Javascript</div>
+                    <div class="badge badge-primary">Mysql</div>
+                    <div class="badge badge-primary">TailwindCSS</div>
+                    <div class="badge badge-primary">Django REST</div>
+                    <div class="badge badge-primary">Django Channels</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- FOOTER
  -->
-    <footer class="p-4 bg-neutral text-neutral-content">
-      <nav class="">
-        <div class="flex flex-row justify-evenly">
-          <div>
-            <h3>Github</h3>
-            <a
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current"
-              >
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                ></path>
-              </svg>
-            </a>
+
+    <div class="pb-16" id="contacto">
+      <h1 class="text-center font-bold text-4xl text-white my-12">
+        CONTÁCTAME
+      </h1>
+      <div
+        class="flex items-center md:items-stretch md:justify-center flex-col gap-y-8 md:flex-row"
+      >
+        <div class="bg-white shadow-lg rounded-lg p-6 mx-4 w-64">
+          <div class="flex items-center mb-4">
+            <img
+              src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EGithub%3C/title%3E%3Cdesc%3EA solid styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' d='M32 0a32.021 32.021 0 0 0-10.1 62.4c1.6.3 2.2-.7 2.2-1.5v-6c-8.9 1.9-10.8-3.8-10.8-3.8-1.5-3.7-3.6-4.7-3.6-4.7-2.9-2 .2-1.9.2-1.9 3.2.2 4.9 3.3 4.9 3.3 2.9 4.9 7.5 3.5 9.3 2.7a6.93 6.93 0 0 1 2-4.3c-7.1-.8-14.6-3.6-14.6-15.8a12.27 12.27 0 0 1 3.3-8.6 11.965 11.965 0 0 1 .3-8.5s2.7-.9 8.8 3.3a30.873 30.873 0 0 1 8-1.1 30.292 30.292 0 0 1 8 1.1c6.1-4.1 8.8-3.3 8.8-3.3a11.965 11.965 0 0 1 .3 8.5 12.1 12.1 0 0 1 3.3 8.6c0 12.3-7.5 15-14.6 15.8a7.746 7.746 0 0 1 2.2 5.9v8.8c0 .9.6 1.8 2.2 1.5A32.021 32.021 0 0 0 32 0z' fill='%23202020'%3E%3C/path%3E%3Cpath data-name='layer1' d='M12.1 45.9c-.1.2-.3.2-.5.1s-.4-.3-.3-.5.3-.2.6-.1c.2.2.3.4.2.5zm1.3 1.5a.589.589 0 0 1-.8-.8.631.631 0 0 1 .7.1.494.494 0 0 1 .1.7zm1.3 1.8a.585.585 0 0 1-.7-.3.6.6 0 0 1 0-.8.585.585 0 0 1 .7.3c.2.3.2.7 0 .8zm1.7 1.8c-.2.2-.5.1-.8-.1-.3-.3-.4-.6-.2-.8a.619.619 0 0 1 .8.1.554.554 0 0 1 .2.8zm2.4 1c-.1.3-.4.4-.8.3s-.6-.4-.5-.7.4-.4.8-.3c.3.2.6.5.5.7zm2.6.2c0 .3-.3.5-.7.5s-.7-.2-.7-.5.3-.5.7-.5c.4.1.7.3.7.5zm2.4-.4q0 .45-.6.6a.691.691 0 0 1-.8-.3q0-.45.6-.6c.5-.1.8.1.8.3z' fill='%23202020'%3E%3C/path%3E%3C/svg%3E"
+              alt="Github"
+              class="bg-white rounded-full p-1 w-8 h-8 mr-2"
+            />
+            <h3 class="text-lg font-semibold text-black">Github</h3>
           </div>
-          <div>
-            <h3>Correo</h3>
-            <a
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current"
-              >
-                <path
-                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-                ></path></svg
-            ></a>
-          </div>
-          <div>
-            <h3>Fiverr</h3>
-            <a
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current"
-              >
-                <path
-                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                ></path></svg
-            ></a>
-          </div>
+          <p class="text-gray-700">
+            ¡Sígueme en Github para ver mis proyectos y contribuciones!
+          </p>
+          <a
+            href="https://github.com/Lekkk02"
+            target="_blank"
+            class="btn btn-primary mt-4"
+            >Ver perfil</a
+          >
         </div>
-      </nav>
-    </footer>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 w-64">
+          <div class="flex mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="fill-current bg-black rounded-md w-full h-16"
+            >
+              <path
+                d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-gray-700">
+            ¡Echa un vistazo a mis servicios y proyectos en Fiverr!
+          </p>
+          <a
+            href="https://www.fiverr.com/mikeg_dev"
+            target="_blank"
+            class="btn btn-primary mt-4"
+            >Ver perfil</a
+          >
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 mx-4 w-64">
+          <div class="flex items-center mb-4">
+            <h3 class="text-lg font-semibold text-black">Correo</h3>
+          </div>
+          <p class="text-gray-700">
+            ¡Contáctame por correo a
+            <span class="font-bold">maikel.g972@gmail.com</span>!
+          </p>
+          <a href="mailto:maikel.g972@gmail.com" class="btn btn-primary mt-8"
+            >Enviar correo</a
+          >
+        </div>
+      </div>
+    </div>
 
     <script>
       const btn = document.getElementById("menu-btn");
