@@ -2171,8 +2171,16 @@ html {
   height: 3rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .w-14 {
@@ -2189,6 +2197,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .max-w-\[85rem\] {
@@ -2323,6 +2335,11 @@ html {
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--n) / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-tr {
@@ -2698,11 +2715,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:mx-9 {
-    margin-left: 2.25rem;
-    margin-right: 2.25rem;
-  }
-
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
