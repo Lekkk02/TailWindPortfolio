@@ -334,212 +334,201 @@
 
     <!-- SECCION DE PROYECTOS
  -->
-
-    <section class="mt-20 w-full bg-bestWhite text-black justify-center flex">
-      <div id="proyectos" class="relative -top-16">#</div>
-
-      <div class="mx-auto flex flex-col">
-        <h1 class="text-4xl font-bold mb-8 text-center text-blue-600 mt-12">
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-blue-500 mb-8">
           PROYECTOS
-          <br />
-          <span class="text-black font-normal text-base">
-            (No está actualizado)</span
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          Aquí puedes encontrar algunos proyectos desarrollados en mi tiempo
+          libre. (Desactualizado)
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- CARD APP APUESTA -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
-        </h1>
-
-        <div
-          class="grid md:grid-flow-col w-fit mx-4 grid-flow-row justify-center gap-x-24 md:grid-cols-2 md:grid-rows-2"
-        >
-          <!-- CARD APP APUESTA
- -->
-          <div class="container mx-auto my-12 w-full text-bestWhite">
-            <div class="card w-full max-w-sm bg-blue-950 shadow-xl">
-              <figure class="bg-white h-44">
-                <img
-                  src="./img/SS-SELLA.png"
-                  alt="Shoes"
-                  class="object-contain"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">
-                  Aplicación web para apuestas de carreras de caballos
-                </h2>
-                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
-                  <li>
-                    Los clientes pueden visualizar detalles de las carreras.
-                  </li>
-                  <li>
-                    Los cajeros pueden gestionar tickets y generar facturas.
-                  </li>
-                  <li>Se pueden generar reportes de las últimas apuestas.</li>
-                  <li>Se puede verificar el estado de un ticket específico.</li>
-                </ul>
-
-                <div class="card-actions justify-end">
-                  <div>
-                    <a
-                      class="btn btn-outline btn-info"
-                      target="_blank"
-                      href="https://github.com/Lekkk02/Loto"
-                      >Repositorio</a
-                    >
-                  </div>
-
-                  <div>
-                    <h1>Tech Stack</h1>
-                    <div class="badge badge-primary">NextJS</div>
-                    <div class="badge badge-primary">MongoDB</div>
-                    <div class="badge badge-primary">Mongoose</div>
-                    <div class="badge badge-primary">TailwindCSS</div>
-                    <div class="badge badge-primary">Javascript</div>
-                    <div class="badge badge-primary">NodeJS</div>
-                    <div class="badge badge-primary">DaisyUI</div>
-                  </div>
+            <img
+              class="w-full h-32 object-fill"
+              src="./img/SS-SELLA.png"
+              alt="Aplicación web para apuestas"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2 text-black">
+                Aplicación web para apuestas de carreras de caballos
+              </h3>
+              <ul class="list-disc pl-5 gap-y-2 text-gray-600 mb-4">
+                <li>Visualizar detalles de las carreras.</li>
+                <li>Gestionar tickets y generar facturas.</li>
+                <li>Generar reportes de las últimas apuestas.</li>
+                <li>Verificar el estado de un ticket específico.</li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 flex-wrap">
+                  <span class="badge badge-outline text-black">NextJS</span>
+                  <span class="badge badge-outline text-black">MongoDB</span>
+                  <span class="badge badge-outline text-black">Mongoose</span>
+                  <span class="badge badge-outline text-black"
+                    >TailwindCSS</span
+                  >
+                  <span class="badge badge-outline text-black">Javascript</span>
+                  <span class="badge badge-outline text-black">NodeJS</span>
+                  <span class="badge badge-outline text-black">DaisyUI</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD APP RN
- -->
-          <div class="container mx-auto my-12 w-full text-bestWhite">
-            <div class="card w-full max-w-sm bg-blue-950 shadow-xl">
-              <figure class="bg-white h-44">
-                <img src="./img/React_Native_Logo.png" alt="" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">
-                  Aplicación móvil para gestión de ordenes de reparación de
-                  equipos
-                </h2>
-                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
-                  <li>
-                    Los técnicos pueden visualizar detalles de las ordenes.
-                  </li>
-                  <li>
-                    Los técnicos pueden gestionar el estado de las ordenes.
-                  </li>
-                  <li>
-                    Cada orden genera un código QR que al escanearse en la app
-                    te redirecciona a la orden.
-                  </li>
-                  <li>
-                    Se generan reportes en formato PDF de las ordenes
-                    individuales y por estado.
-                  </li>
-                </ul>
-
-                <div class="card-actions justify-end">
-                  <div>
-                    <a
-                      class="btn btn-outline btn-info"
-                      target="_blank"
-                      href="https://github.com/Lekkk02/AppTallerV3"
-                      >Repositorio</a
-                    >
-                  </div>
-
-                  <div>
-                    <h1>Tech Stack</h1>
-                    <div class="badge badge-primary">React</div>
-                    <div class="badge badge-primary">React Native</div>
-                    <div class="badge badge-primary">MySQL</div>
-                    <div class="badge badge-primary">Sequelize</div>
-                    <div class="badge badge-primary">NodeJS</div>
-                    <div class="badge badge-primary">Express</div>
-                    <div class="badge badge-primary">FirebaseAuth</div>
-                  </div>
+          <!-- CARD APP RN -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="w-full h-32 object-contain"
+              src="./img/React_Native_Logo.png"
+              alt="Aplicación móvil para gestión de ordenes"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2 text-black">
+                Aplicación móvil para gestión de ordenes de reparación de
+                equipos
+              </h3>
+              <ul class="list-disc pl-5 gap-y-2 text-gray-600 mb-4">
+                <li>Visualizar detalles de las ordenes.</li>
+                <li>Gestionar el estado de las ordenes.</li>
+                <li>Código QR para redireccionar a la orden.</li>
+                <li>
+                  Reportes en PDF de las ordenes individuales y por estado.
+                </li>
+              </ul>
+              <div class="flex justify-between items-center">
+                >
+                <div class="flex gap-2 flex-wrap">
+                  <span class="badge badge-outline text-black">React</span>
+                  <span class="badge badge-outline text-black"
+                    >React Native</span
+                  >
+                  <span class="badge badge-outline text-black">MySQL</span>
+                  <span class="badge badge-outline text-black">Sequelize</span>
+                  <span class="badge badge-outline text-black">NodeJS</span>
+                  <span class="badge badge-outline text-black">Express</span>
+                  <span class="badge badge-outline text-black"
+                    >FirebaseAuth</span
+                  >
                 </div>
               </div>
             </div>
           </div>
+
           <!-- CARD APP DJANGO -->
-          <div class="container mx-auto my-12 w-full text-bestWhite">
-            <div class="card w-full max-w-sm bg-blue-950 shadow-xl">
-              <figure class="bg-white h-44">
-                <img src="./img/GameTopicIndex.jpeg" alt="" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Foro de documentación de videojuegos</h2>
-                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
-                  <li>
-                    Los usuarios pueden visitar cada videojuego, hacer
-                    comentarios y puntuarlos
-                  </li>
-                  <li>Se generan reportes en PDF de los juegos</li>
-                  <li>
-                    Los administradores pueden banear y sancionar usuarios. Los
-                    administradores pueden añadir y eliminar videojuegos
-                  </li>
-                </ul>
-
-                <div class="card-actions justify-end">
-                  <div>
-                    <a
-                      class="btn btn-outline btn-info"
-                      target="_blank"
-                      href="https://github.com/PichiGod/gametopic-pichi"
-                      >Repositorio</a
-                    >
-                  </div>
-
-                  <div>
-                    <h1>Tech Stack</h1>
-                    <div class="badge badge-primary">React</div>
-                    <div class="badge badge-primary">MySQL</div>
-                    <div class="badge badge-primary">Sequelize</div>
-                    <div class="badge badge-primary">NodeJS</div>
-                    <div class="badge badge-primary">Express</div>
-                    <div class="badge badge-primary">Bootstrap</div>
-                  </div>
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="w-full h-32 object-fill"
+              src="./img/GameTopicIndex.jpeg"
+              alt="Foro de documentación de videojuegos"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2 text-black">
+                Foro de documentación de videojuegos
+              </h3>
+              <ul class="list-disc pl-5 gap-y-2 text-gray-600 mb-4">
+                <li>Comentarios y puntuaciones de videojuegos.</li>
+                <li>Reportes en PDF de los juegos.</li>
+                <li>Administrar usuarios y videojuegos.</li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 flex-wrap">
+                  <span class="badge badge-outline text-black">React</span>
+                  <span class="badge badge-outline text-black">MySQL</span>
+                  <span class="badge badge-outline text-black">Sequelize</span>
+                  <span class="badge badge-outline text-black">NodeJS</span>
+                  <span class="badge badge-outline text-black">Express</span>
+                  <span class="badge badge-outline text-black">Bootstrap</span>
                 </div>
               </div>
             </div>
           </div>
-          <!-- CARD APP GAMETOPIC  -->
-          <div class="container mx-auto my-12 w-full text-bestWhite">
-            <div class="card w-full max-w-sm bg-blue-950 shadow-xl">
-              <figure class="bg-white h-44">
-                <img src="./img/django.png" alt="" class="h-24" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">SocialApp DevTalk (En desarrollo)</h2>
-                <ul class="list-disc pl-5 gap-y-2 text-bestWhite">
-                  <li>
-                    Los usuarios crearán preguntas, las cuales se vuelven salas
-                    de chat hasta que el usuario cierre la pregunta o la marque
-                    como resuelta.
-                  </li>
-                  <li>Login / Registro de usuarios</li>
-                  <li>
-                    Los usuarios pueden añadir a otros usuarios como amigos
-                  </li>
-                  <li>
-                    Los usuarios que han creado una sala de chat tienen el
-                    privilegio de banear a un usuario de esa sala
-                  </li>
-                </ul>
 
-                <div class="card-actions justify-end">
-                  <div>
-                    <a
-                      class="btn btn-outline btn-info"
-                      href="https://github.com/Lekkk02/SocialAppDjango"
-                      target="_blank"
-                      >Repositorio</a
-                    >
-                  </div>
+          <!-- CARD APP GAMETOPIC -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="w-full h-32 object-contain"
+              src="./img/django.png"
+              alt="SocialApp DevTalk (En desarrollo)"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2 text-black">
+                SocialApp DevTalk (En desarrollo)
+              </h3>
+              <ul class="list-disc pl-5 gap-y-2 text-gray-600 mb-4">
+                <li>Preguntas que se convierten en salas de chat.</li>
+                <li>Login / Registro de usuarios.</li>
+                <li>Añadir a otros usuarios como amigos.</li>
+                <li>Administrar permisos en las salas de chat.</li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 flex-wrap">
+                  <span class="badge badge-outline text-black">Django</span>
+                  <span class="badge badge-outline text-black">Javascript</span>
+                  <span class="badge badge-outline text-black">Mysql</span>
+                  <span class="badge badge-outline text-black"
+                    >TailwindCSS</span
+                  >
+                  <span class="badge badge-outline text-black"
+                    >Django REST</span
+                  >
+                  <span class="badge badge-outline text-black"
+                    >Django Channels</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-                  <div>
-                    <h1>Tech Stack</h1>
-                    <div class="badge badge-primary">Django</div>
-                    <div class="badge badge-primary">Javascript</div>
-                    <div class="badge badge-primary">Mysql</div>
-                    <div class="badge badge-primary">TailwindCSS</div>
-                    <div class="badge badge-primary">Django REST</div>
-                    <div class="badge badge-primary">Django Channels</div>
-                  </div>
+          <!-- CARD NEW PROJECT 1 -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              class="w-full h-32 object-fill"
+              src="./img/AppGestionInv.png"
+              alt="Nuevo Proyecto 1"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-2 text-black">
+                Aplicación web y móvil para la gestión y reaprovisionamiento de
+                inventarios de insumos médicos mediante códigos QR
+              </h3>
+              <ul class="list-disc pl-5 gap-y-2 text-gray-600 mb-4">
+                <li>Gestión de productos y lotes</li>
+                <li>
+                  Generación de QR de lotes y productos para escaneo en
+                  aplicación móvil
+                </li>
+                <li>Reportes en PDF de salidas</li>
+                <li>Gestión de usuarios y privilegios</li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 flex-wrap">
+                  <span class="badge badge-outline text-black">React</span>
+                  <span class="badge badge-outline text-black">NextJS</span>
+                  <span class="badge badge-outline text-black"
+                    >TailwindCSS</span
+                  >
+                  <span class="badge badge-outline text-black">NodeJS</span>
+                  <span class="badge badge-outline text-black"
+                    >JWT + Bcrypt</span
+                  >
+                  <span class="badge badge-outline text-black">SQL Server</span>
+                  <span class="badge badge-outline text-black">Azure</span>
+                  <span class="badge badge-outline text-black"
+                    >React Native</span
+                  >
+                  <span class="badge badge-outline text-black">Expo EAS</span>
                 </div>
               </div>
             </div>
@@ -547,6 +536,7 @@
         </div>
       </div>
     </section>
+
     <!-- FOOTER
  -->
 
